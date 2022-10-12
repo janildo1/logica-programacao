@@ -17,7 +17,7 @@ public class App {
         //5. Fazer a operação Soma e salvar na variável r
         int r = n1 + n2;
         //5. Escrever o Resultado.
-        System.out.println("O resultado da soma = "+ r);
+        System.out.println("O resultado da soma = "+r);
         ler.close();
     }
 }
