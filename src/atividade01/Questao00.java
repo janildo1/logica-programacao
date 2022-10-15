@@ -26,8 +26,8 @@ public class Questao00 {
         System.out.println("Altura"+altura);
         System.out.println("Sexo"+sexo);
 
-        //quantas copas do mundo essa pessoa já viu o Brasil vencer?
-        //anos que brasil ganhou a copa: 1958 1962 1970 1994 2002 futura 2022
+        /* quantas copas do mundo essa pessoa já viu o Brasil vencer?
+        Anos que brasil ganhou a copa: 1958 1962 1970 1994 2002 futura 2022*/
         int anoNascimento = 2022 - idade;
         int qtCopas = 0;
         String listaCopas = "";
