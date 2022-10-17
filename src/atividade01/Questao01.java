@@ -12,12 +12,12 @@ public class Questao01 {
         Scanner ler = new Scanner(System.in);
 
         System.out.println("Digite a primeira nota: ");
-        float nota1 = ler.nextFloat();
+        double nota1 = ler.nextDouble();
 
         System.out.println("Digite a segunda nota: ");
-        float nota2 = ler.nextFloat();
+        double nota2 = ler.nextDouble();
 
-        float media = (nota1 + nota2)/2;
+        double media = (nota1 + nota2)/2;
         System.out.println("A média final do aluno foi: "+media);
 
         ler.close();
