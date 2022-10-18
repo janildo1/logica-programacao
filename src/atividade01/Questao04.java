@@ -16,7 +16,7 @@ public class Questao04 {
         float valorHora = ler.nextFloat();
 
         System.out.println("Informe a quantidade de horas trabalhadas: ");
-        int qtHoras = ler.nextInt();
+        float qtHoras = ler.nextFloat();
 
         float salario = (valorHora * qtHoras);
         System.out.println(nome+" vai receber R$ "+salario);
