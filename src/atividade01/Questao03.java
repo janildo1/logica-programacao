@@ -10,7 +10,7 @@ public class Questao03 {
 
         System.out.println("Digite seu nome: ");
         String nome = ler.nextLine();
-        ler.close();
+        //ler.close();
 
         System.out.println("Olá, Seja bem-vindo Senhor(a) "+nome);
 

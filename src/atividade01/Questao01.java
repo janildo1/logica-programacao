@@ -18,7 +18,7 @@ public class Questao01 {
         double media = (nota1 + nota2)/2;
         System.out.println("A média final do aluno foi: "+media);
 
-        ler.close();
+        //ler.close();
         
         if(media >= 7){
             System.out.println("O aluno foi Aprovado.");

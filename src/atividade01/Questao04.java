@@ -21,7 +21,7 @@ public class Questao04 {
         float salario = (valorHora * qtHoras);
         System.out.println(nome+" vai receber R$ "+salario);
 
-        ler.close();      
+        //ler.close();      
         
     }
     

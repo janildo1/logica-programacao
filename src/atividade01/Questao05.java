@@ -12,7 +12,7 @@ public class Questao05 {
 
         System.out.println("Informe o valor do jantar: ");
         float valorJantar = ler.nextFloat();
-        ler.close();
+        //ler.close();
 
         float taxaGarcom = (valorJantar * 10)/100;
         System.out.println("A taxa de garçom é R$ "+taxaGarcom);

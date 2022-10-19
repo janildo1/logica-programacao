@@ -15,7 +15,7 @@ public class Questao02 {
         num = ler.nextInt();
         anterior = num - 1;
         proximo = num + 1;
-        ler.close();
+        //ler.close();
 
         System.out.println("O número digitado foi: "+num);
         System.out.println("O número anterior é: "+anterior);

@@ -14,7 +14,7 @@ public class Questao06 {
 
         System.out.println("Informe a quantidade de pessoas: ");
         int qtPessoas = ler.nextInt();
-        ler.close();
+        //ler.close();
 
         float valorUnitario = (valorTotal / qtPessoas);
         System.out.println("O valor que cada pessoa vai pagar é R$ "+valorUnitario);
