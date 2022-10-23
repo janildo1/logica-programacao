@@ -8,29 +8,25 @@ public class Questao04 {
         o retorno vai ser "Palavra Errada" se igual "Palavra Ok" a pessoa
         pode fazer no máximo 5 tentativas de acertar a palavra. */
         Scanner ler = new Scanner(System.in);
-        //System.out.println("Digite uma palavra: ");
-        String palavra = ler.nextLine();
+        System.out.println("Você pode fazer no máximo 5 tentativas para tentar acertar a palavra");
         int tentativas = 5;
-        int palpite = 0;
-        boolean acertou = false;
-        String palavraCorreta = "Java-2022";
         
-        while(tentativas > 0 && acertou == false){
-            System.out.println("Qual seu palpite? ");
-            palavra = ler.nextLine();
+        do{
+           System.out.println("Qual seu palpite? ");
+           String palpite = ler.nextLine();
+
+           tentativas = tentativas - 1;
             
-            if(palavra == palavraCorreta){
-            System.out.println("Palavra Correta.");
-            acertou = true;
-            } else if(palavra != palavraCorreta){
-            --tentativas;
-            System.out.println("Palavra Errada" + tentativas + " tentativas restantes.");
+            if(palpite.contentEquals("Java-2022")){
+                System.out.println("Palavra Correta.");
+                break;
+            
             } else{
-            --tentativas;
-            System.out.println("Numero muito grande!" + tentativas + " tentativas restantes.");
-            }
-            
-        } 
-        
+                System.out.println("Palavra Errada. Você possui " + tentativas + " tentativas restantes.");
+            } 
+            //System.out.println("Numero muito grande!" + tentativas + " tentativas restantes.");
+                   
+        } while (tentativas >0); 
+        ler.close();
     }        
 }  
