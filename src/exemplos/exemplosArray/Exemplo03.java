@@ -10,7 +10,7 @@ public class Exemplo03 {
         // arraylista é uma classe java mais flexivel para manipular uma lista
         ArrayList<String> lista = new ArrayList<String>();
         int selecionado = 0;
-        Object[] opcoes = { "Incluir", "Listar", "Apagar", "Finalizar" };
+        Object[] opcoes = { "Incluir", "Listar", "Apagar", "Alterar", "Finalizar" };
         do {
             selecionado = JOptionPane.showOptionDialog(
                     null,
@@ -50,7 +50,31 @@ public class Exemplo03 {
                     }
                 }
             }
-        } while (selecionado != 3);
+            if (selecionado == 3) {
+                Object[] opcaoApagar = new Object[lista.size()];
+                for (int i = 0; i < opcaoApagar.length; i++) {
+                    opcaoApagar[i] = lista.get(i);
+                
+            }
+            Object itemSelecionado = JOptionPane.showInputDialog(
+                null,
+                "Selecione o item para alterar",
+                "Alterar",
+                JOptionPane.INFORMATION_MESSAGE,
+                null,
+                opcaoApagar,
+                opcaoApagar[0]);
+                System.out.println(itemSelecionado.toString());
+            for (int i = 0; i < lista.size(); i++) {
+                if (itemSelecionado.toString().equals(lista.get(i))) {
+                    lista.remove(i);
 
+                    String item = JOptionPane.showInputDialog("Digite:");
+                    lista.add(item);
+        } 
+
+    }
+}
+        }while (selecionado != 4);
     }
 }
