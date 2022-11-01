@@ -4,15 +4,18 @@ import java.util.jar.Manifest;
 
 public class Exemplo00 {
     public static void main(String[] args) {
-        Caneta caneta1 = new Caneta();
-        caneta1.modelo = "BIC";
-        caneta1.cor = "Azul";
-        caneta1.ponta = 0.9f;
-        caneta1.carga = 100;
-        caneta1.tampa = false;
+        Caneta caneta1 = new Caneta("BIC","Azul");
+        caneta1.printStatus();
         caneta1.rabiscar();
-        caneta1.tampar();
+        caneta1.printStatus();
+        caneta1.destampar();
         caneta1.rabiscar();
+        caneta1.printStatus();
+        caneta1.escrever("Luiz Felipe Freire Maia");
+        caneta1.printStatus();
+        caneta1.escrever("Luiz");
+        caneta1.printStatus();
+        Caneta caneta2 = new Caneta("BIC", "Preta");
+        caneta2.printStatus();
     }
-    
 }
